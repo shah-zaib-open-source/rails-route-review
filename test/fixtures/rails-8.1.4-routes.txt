@@ -1,0 +1,45 @@
+--[ Route 1 ]-------------------------------------------------------------------
+Prefix            | users
+Verb              | GET
+URI               | /users(.:format)
+Controller#Action | users#index
+--[ Route 2 ]-------------------------------------------------------------------
+Prefix            | 
+Verb              | POST
+URI               | /users(.:format)
+Controller#Action | users#create
+--[ Route 3 ]-------------------------------------------------------------------
+Prefix            | new_user
+Verb              | GET
+URI               | /users/new(.:format)
+Controller#Action | users#new
+--[ Route 4 ]-------------------------------------------------------------------
+Prefix            | edit_user
+Verb              | GET
+URI               | /users/:id/edit(.:format)
+Controller#Action | users#edit
+--[ Route 5 ]-------------------------------------------------------------------
+Prefix            | user
+Verb              | GET
+URI               | /users/:id(.:format)
+Controller#Action | users#show
+--[ Route 6 ]-------------------------------------------------------------------
+Prefix            | 
+Verb              | PATCH
+URI               | /users/:id(.:format)
+Controller#Action | users#update
+--[ Route 7 ]-------------------------------------------------------------------
+Prefix            | 
+Verb              | PUT
+URI               | /users/:id(.:format)
+Controller#Action | users#update
+--[ Route 8 ]-------------------------------------------------------------------
+Prefix            | 
+Verb              | DELETE
+URI               | /users/:id(.:format)
+Controller#Action | users#destroy
+--[ Route 9 ]-------------------------------------------------------------------
+Prefix            | health
+Verb              | GET
+URI               | /health(.:format)
+Controller#Action | health#show

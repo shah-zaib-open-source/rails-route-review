@@ -1,0 +1,13 @@
+[ Routes for application ]
+--[ Route 1 ]-------------------------------------------------------------------
+Prefix            | test_engine_engine
+Verb              | 
+URI               | /test
+Controller#Action | TestEngine::Engine
+
+[ Routes for TestEngine::Engine ]
+--[ Route 1 ]-------------------------------------------------------------------
+Prefix            | items
+Verb              | GET
+URI               | /items(.:format)
+Controller#Action | items#index
